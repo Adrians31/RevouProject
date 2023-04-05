@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Kalkulator Matematik (Segitiga & Jajar Genjang)</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body
+    style=" background: url(https://wallpaperaccess.com/full/260185.jpg)
+  ;background-size: cover; background-attachment; fixed ;"
+  >
+    <center>
+      <h1>Welcome To Katik</h1>
+      <p>Halo Sobat, Selamat datang di Katik ^_^</p>
+      <p>
+        Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan
+        keliling bangun datar
+      </p>
+      <h3 class="kotakheadersegitga">Segitiga</h3>
+      <h3>Jajar Genjang</h3>
+      <br />
+      <h2 class="kotakheader2segitga">Luas & Keliling Segitiga</h2>
+
+      <div class="kotaksegitga">
+        <br />
+        <img src="RumusSegitiga.JPG" alt="Gambar" width="500" height="300" />
+        <hr />
+        <br />
+
+        <h2>Hitung Luas Segitiga</h2>
+
+        <script src="js/index.js"></script>
+        <form>
+          <input
+            type="number"
+            id="alas"
+            name="alas"
+            placeholder="Nilai Alas Segitiga"
+            required
+          />
+
+          <input
+            type="number"
+            id="tinggi"
+            name="tinggi"
+            placeholder="Nilai tinggi Segitiga"
+          />
+
+          <button type="button" onclick="hitungLuas()">Hitung</button>
+          <br /><br />
+          <label for="luas">Hasil perhitungan:</label>
+
+          <input type="text" id="luas" name="luas" readonly margin="left" />
+          <button type="reset">Reset</button>
+
+          <br /><br />
+          <hr />
+
+          <h2>Hitung Keliling Segitiga</h2>
+          <p>Masukkan panjang sisi-sisi segitiga:</p>
+
+          <input
+            type="number"
+            id="sisi_a"
+            placeholder="Masukkan Sisi A"
+          /><br />
+
+          <input
+            type="number"
+            id="sisi_b"
+            placeholder="Masukkan Sisi B"
+          /><br />
+
+          <input
+            type="number"
+            id="sisi_c"
+            placeholder="Masukkan Sisi C"
+          /><br />
+          <br />
+          <button type="button" onclick="hitungKeliling()">Hitung</button>
+          <br /><br />
+          <label for="keliling">Hasil perhitungan:</label>
+          <input type="text" id="keliling" name="keliling" readonly />
+          <button type="reset">Reset</button>
+        </form>
+      </div>
+
+      <!--JAJAR GENJANG-->
+      <br /><br /><br />
+      <h2 class="kotakheader2JajarGenjang">Luas & Keliling JajarGenjang</h2>
+      <div class="kotakJajarGenjang">
+        <br />
+        <img
+          src="rumus_jajargenjang.jpg"
+          alt="Gambar"
+          width="500"
+          height="300"
+        />
+        <hr />
+        <br />
+
+        <h2>Hitung Luas JajarGenjang</h2>
+        <script src="js/index.js"></script>
+        <form>
+          <input
+            type="number"
+            id="alas_jajargenjang"
+            placeholder="Nilai Alas JajarGenjang"
+          /><br />
+          <input
+            type="number"
+            id="tinggi_jajargenjang"
+            placeholder="Nilai Tinggi JajarGenjang"
+          /><br />
+          <br />
+          <button type="button" onclick="hitungLuasJajarGenjang()">
+            Hitung
+          </button>
+          <br /><br />
+          <label for="hitungLuasJajarGenjang">Hasil perhitungan:</label>
+          <input
+            type="text"
+            id="luasjajargenjang"
+            name="luasjajargenjang"
+            readonly
+          />
+          <button type="reset">Reset</button>
+        </form>
+
+        <br /><br />
+        <hr />
+
+        <h2>Hitung Keliling JajarGenjang</h2>
+        <script src="js/index.js"></script>
+        <form>
+          <input
+            type="number"
+            id="alas_jajargenjang2"
+            placeholder="Nilai Alas JajarGenjang"
+          /><br />
+          <input
+            type="number"
+            id="b_jajargenjang"
+            placeholder="Nilai B JajarGenjang"
+          /><br />
+          <br />
+
+          <button type="button" onclick="hitungKelilingJajarGenjang()">
+            Hitung
+          </button>
+          <br /><br />
+          <label for="hitungLuasJajarGenjang">Hasil perhitungan:</label>
+          <input
+            type="text"
+            id="keliling_jajargenjang"
+            name="lkeliling_jajargenjang"
+            readonly
+          />
+          <button type="reset">Reset</button>
+        </form>
+      </div>
+    </center>
+  </body>
+</html>
